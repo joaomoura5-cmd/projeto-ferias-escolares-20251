@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- João Gabriel Campos de Moura e Henrique Jara Palma, 1212b-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site com dicas e atividades para as Férias Escolares.">
+    <meta name="keywords" content="férias, escolar, viagem, atividade, segurança, planejamento">
+    <title>Página Inicial - Férias Escolares (Layout Único)</title>
+    <link rel="icon" href="imagens/unnamed.jpg" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagens/unnamed.jpg" alt="Férias Escolares Logo" class="logo-img">
+        </div>
+        
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="personalidades.html">Personagens</a></li>
+                <li><a href="organizacao.html">Planejamento</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-layout">
+        
+        <main class="content"> <section class="introducao">
+                <h1>Aproveite as Férias!</h1>
+                <p>Descubra atividades, destinos e dicas de segurança para aproveitar ao máximo as férias escolares!</p>
+            </section>
+
+            <section class="cards-container">
+                <article class="card">
+                    <img src="imagens/destinos-de-praia-brasil-carneiros.jpg" alt="Destinos Populares" loading="lazy">
+                    <div class="card-body">
+                        <h3>Destinos Populares</h3>
+                        <p>Praias, campos e cidades para visitar. Encontre seu lugar ideal!</p>
+                        <a href="destinos.html" class="btn">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/IMG_0166-1024x683.jpg" alt="Atividades" loading="lazy">
+                    <div class="card-body">
+                        <h3>Atividades Jovens</h3>
+                        <p>Ideias divertidas para fazer em casa ou fora.</p>
+                        <a href="destinos.html" class="btn">Ideias</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar"> 
+            <h3>Dicas Rápidas</h3>
+            <ul>
+                <li>Não esqueça o protetor solar.</li>
+                <li>Leve documentos das crianças.</li>
+                <li>Hidrate-se sempre!</li>
+            </ul>
+            <h3>Passeios Gratuitos</h3>
+            <p>Confira os parques da sua cidade e explore novas aventuras.</p>
+        </aside>
+    </div>
+ <footer>
+        <p>&copy; 2025 - João e Henrique - Férias Escolares</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
