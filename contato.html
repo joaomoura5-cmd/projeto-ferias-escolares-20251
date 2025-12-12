@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- João Gabriel Campos de Moura e Henrique Jara Palma, 1212b-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a equipe do Férias Escolares.">
+    <title>Fale Conosco - Férias Escolares</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="imagens/unnamed.jpg" alt="Logo Férias Escolares" class="logo-img">
+        </div>
+        
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="personalidades.html">Personagens</a></li>
+                <li><a href="organizacao.html">Planejamento</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-layout" style="grid-template-columns: 1fr;"> <main class="content-full">
+            <section class="introducao">
+                <h1>Entre em Contato</h1>
+                <p>Tem alguma dúvida ou sugestão? Preencha o formulário abaixo que responderemos o mais breve possível.</p>
+            </section>
+
+            <section class="card" style="padding: 30px; max-width: 800px; margin: 0 auto;">
+                <form action="processa.html" method="POST" id="contatoForm">
+                    
+                    <div style="margin-bottom: 15px;">
+                        <label for="nome" style="display: block; margin-bottom: 5px; font-weight: bold;">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required minlength="3" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="assunto" style="display: block; margin-bottom: 5px; font-weight: bold;">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label for="mensagem" style="display: block; margin-bottom: 5px; font-weight: bold;">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; resize: vertical;"></textarea>
+                    </div>
+
+                    <div class="form-buttons" style="display: flex; gap: 15px;">
+                        <button type="submit" class="btn">Enviar</button> <button type="reset" class="btn" style="background-color: #95a5a6;">Limpar</button> </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - João e Henrique - Férias Escolares</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

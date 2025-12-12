@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- João Gabriel Campos de Moura e Henrique Jara Palma, 1212b-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vídeos educativos e dicas de viagem.">
+    <title>Vídeos - Férias Escolares</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="imagens/unnamed.jpg" alt="Logo Férias Escolares" class="logo-img">
+        </div>
+        
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="personalidades.html">Personagens</a></li>
+                <li><a href="organizacao.html">Planejamento</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-layout" style="grid-template-columns: 1fr;">
+        
+        <main class="content-full">
+            <section class="introducao">
+                <h1>Vídeos Educativos</h1>
+                <p>Assista a tutoriais e dicas selecionadas para melhorar suas férias.</p>
+            </section>
+
+            <section class="card" style="padding: 25px; margin-bottom: 30px;">
+                <h2 style="color: #E07A5F; margin-bottom: 15px;">Dicas de Viagem</h2>
+                
+                <div class="video-container" style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dy4PSFMhtQg?si=_vjM3vMulpLFzco7"
+                     title="YouTube video player" 
+                     frameborder="0" 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     referrerpolicy="strict-origin-when-cross-origin" 
+                     allowfullscreen></iframe>
+                    
+                    <p style="margin-top: 15px; color: #555;">
+                        Dicas gerais para curtir as férias com segurança e planejamento.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card" style="padding: 25px; margin-bottom: 30px;">
+                <h2 style="color: #E07A5F; margin-bottom: 15px;">Atividades em Casa</h2>
+                
+                <div class="video-container" style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ntrf566aXbA?si=HlJ9oH08klJOvrV7" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                    <p style="margin-top: 15px; color: #555;">
+                        Aprenda brincadeiras educativas para dias de chuva ou descanso.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - João e Henrique - Férias Escolares</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
